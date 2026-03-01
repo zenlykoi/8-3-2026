@@ -1,28 +1,27 @@
 // ===== DANH SÁCH PHẦN QUÀ =====
 // Bạn có thể chỉnh sửa danh sách này dễ dàng
 const GIFT_LIST = [
-    { type: 'money', value: 1000, emoji: '💵', text: '+1.000 ₫', desc: 'Một chút tiền nhỏ để thêm vào ví yêu thương nha! 💕' },
-    { type: 'money', value: 10000, emoji: '💵', text: '+10.000 ₫', desc: 'Mua được ly trà sữa rồi đấy! 🧋' },
-    { type: 'money', value: 20000, emoji: '💰', text: '+20.000 ₫', desc: 'Đủ tiền ăn sáng ngon lành cho em! 🥐' },
-    { type: 'money', value: 50000, emoji: '💰', text: '+50.000 ₫', desc: 'Bữa cơm trưa đầy đủ dành cho em yêu! 🍜' },
-    { type: 'money', value: 100000, emoji: '💎', text: '+100.000 ₫', desc: 'Wow! Một khoản tiền kha khá đấy nhé! 💰' },
-    { type: 'money', value: 200000, emoji: '💎', text: '+200.000 ₫', desc: 'Đi shopping nhẹ nhàng luôn nè! 🛍️' },
-    { type: 'money', value: 500000, emoji: '👑', text: '+500.000 ₫', desc: 'Jackpot lớn rồi! Anh giàu quá đi mất! 👑✨' },
-    { type: 'money', value: -50000, emoji: '😢', text: '-50.000 ₫', desc: 'Ối dồi ôi! Mất tiền rồi em ơi... Nhưng anh vẫn yêu em! 💔' },
-    { type: 'money', value: -100000, emoji: '😭', text: '-100.000 ₫', desc: 'Ối giời ơi! Phá sản rồi... Nhưng còn tình yêu mà! 😭💕' },
-    { type: 'money', value: 150000, emoji: '💰', text: '+150.000 ₫', desc: 'Ăn tối sang chảnh và xem phim nhé! 🍿🎬' },
-
-    { type: 'money', value: 2000, emoji: '💵', text: '+2.000 ₫', desc: 'Ít thôi nhưng tình cảm đong đầy! 💖' },
-    { type: 'money', value: 3000, emoji: '💵', text: '+3.000 ₫', desc: 'Từng đồng một tích góp cũng thành núi vàng! 💰' },
-    { type: 'money', value: 4000, emoji: '💵', text: '+4.000 ₫', desc: 'Tiền ít tình nhiều em nhé! 🥰' },
-    { type: 'money', value: 5000, emoji: '💵', text: '+5.000 ₫', desc: 'Mua được que kem cho em đây! 🍦' },
+    { type: 'money', value: 520000, emoji: '💘', text: '+520.000 ₫', desc: '520 - wǒ ài nǐ 💕' },
+    { type: 'money', value: 1314000, emoji: '💘', text: '+1.314.000 ₫', desc: '1314 - Trọn đời trọn kiếp bên nhao em nhá' },
+    { type: 'money', value: 5201314, emoji: '💘', text: '+5.201.314 ₫', desc: '5201314 - Anh sẽ iu em trọn đời trọn kiếp 💞' },
+    { type: 'money', value: 999999, emoji: '💘', text: '+999.999 ₫', desc: '999 - Biểu trưng cho tình iu vĩnh cửu 😇' },
+    { type: 'money', value: 1001, emoji: '💘', text: '+1001 ₫', desc: '1001 - Duy nhất, chỉ iu có một mình em thui ☝️' },
+    { type: 'money', value: 111, emoji: '💘', text: '+111 ₫', desc: '111 - Một lòng một dạ' },
+    { type: 'money', value: 222222, emoji: '💘', text: '+222.222 ₫', desc: '222 - Mình mãi mãi bên nhau em nhé 🙆' },
+    { type: 'money', value: 1000, emoji: '💵', text: '+1.000 ₫', desc: 'Ít thôi nhưng tình cảm đong đầy! 💖' },
+    { type: 'money', value: 50000, emoji: '💵', text: '+50.000 ₫', desc: 'Mua tà tưa cho ny nhoaa 🧋' },
+    { type: 'money', value: 221022, emoji: '💵', text: '+221.022 ₫', desc: 'Ngày gì đó em nhỉ, ngày gì nhỉ??? 🙈' },
+    { type: 'money', value: 9999999, emoji: '💵', text: '9.999.999 ₫', desc: 'Trúng sổ số à iem 🫣' },
+    { type: 'money', value: 1000000, emoji: '💵', text: '1.000.000 ₫', desc: '💵 🪙 💰 💎 💸 💵 💴 💶 💷 💳 🎲' },
+    { type: 'money', value: -99999, emoji: '😢', text: '-99.999 ₫', desc: 'Ối dồi ôi! Rơi xiền rồi iem ơi... Nhưng anh vẫn yêu em! 💔' },
+    { type: 'money', value: -500000, emoji: '😭', text: '-500.000 ₫', desc: 'Ối giời ơi! Phá sản rồi... Nhưng còn tình yêu mà! 😭💕' },
 
     { type: 'multiply', value: 2, emoji: '✨', text: 'Nhân 2 tổng tiền', desc: 'Ma thuật x2! Số tiền hiện tại của em sẽ tăng gấp đôi! ✨🎰' },
     { type: 'multiply', value: 3, emoji: '🌟', text: 'Nhân 3 tổng tiền', desc: 'Siêu ma thuật x3! Em vừa trúng bùa yêu tài lộc! 🌟💫' },
 
     { type: 'divide', value: 2, emoji: '💔', text: 'Chia 2 tổng tiền', desc: 'Ối! Phép toán tàn nhẫn... Tiền của em bị cắt đôi rồi! 💔😢' },
 
-    { type: 'percent', value: -30, emoji: '📉', text: 'Trừ 30% tổng tiền', desc: 'Thuế tình yêu đây! Mất 30% nhưng anh vẫn yêu em nhiều hơn! 📉💕' },
+    { type: 'percent', value: -30, emoji: '📉', text: 'Trừ 30% tổng tiền', desc: 'Thuế tình yêu đây! Rơi 30% nhưng anh vẫn yêu em nhiều hơn! 📉💕' },
     { type: 'percent', value: 50, emoji: '📈', text: '+50% tổng tiền', desc: 'Lãi suất tình yêu! Tài khoản của em tăng 50%! 📈💰' },
 
     { type: 'special', value: 0, emoji: '😘', text: '+1 Nụ hôn miễn phí', desc: 'Một nụ hôn ngọt ngào không giới hạn thời gian! 💋😘' },
@@ -42,7 +41,8 @@ let gameState = {
     totalMoney: 0,
     openedBoxes: [],
     history: [],
-    hasStarted: false
+    hasStarted: false,
+    giftMapping: [] // Map giữa boxNumber và gift (shuffled)
 };
 
 // ===== DOM ELEMENTS =====
@@ -78,6 +78,12 @@ document.addEventListener('DOMContentLoaded', () => {
 function initEventListeners() {
     startBtn.addEventListener('click', () => {
         gameState.hasStarted = true;
+        
+        // Khởi tạo gift mapping nếu chưa có
+        if (gameState.giftMapping.length === 0) {
+            initGiftMapping();
+        }
+        
         saveGameState();
         welcomeScreen.classList.remove('active');
         giftScreen.classList.add('active');
@@ -107,6 +113,13 @@ function initEventListeners() {
 }
 
 // ===== GIFTS GRID =====
+function initGiftMapping() {
+    // Shuffle GIFT_LIST để random vị trí
+    const shuffled = [...GIFT_LIST].sort(() => Math.random() - 0.5);
+    gameState.giftMapping = shuffled;
+    saveGameState();
+}
+
 function initGiftsGrid() {
     giftsGrid.innerHTML = '';
     
@@ -173,8 +186,8 @@ function openBox(boxNumber, boxElement) {
     boxElement.classList.add('opening');
     
     setTimeout(() => {
-        // Random phần quà
-        const gift = getRandomGift();
+        // Lấy phần quà từ mapping (mỗi hộp có 1 quà duy nhất)
+        const gift = getGiftForBox(boxNumber);
         
         // Cập nhật state
         const openedBox = {
@@ -224,6 +237,12 @@ function openBox(boxNumber, boxElement) {
         boxElement.style.cursor = 'default';
         
     }, 600);
+}
+
+function getGiftForBox(boxNumber) {
+    // Lấy quà theo boxNumber từ giftMapping (index = boxNumber - 1)
+    const gift = gameState.giftMapping[boxNumber - 1];
+    return { ...gift };
 }
 
 function getRandomGift() {
@@ -411,8 +430,12 @@ function resetGame() {
         totalMoney: 0,
         openedBoxes: [],
         history: [],
-        hasStarted: false
+        hasStarted: false,
+        giftMapping: []
     };
+    
+    // Shuffle lại gift mapping cho lần chơi mới
+    initGiftMapping();
     
     historyModal.classList.remove('active');
     giftScreen.classList.remove('active');
@@ -437,6 +460,10 @@ function loadGameState() {
             if (gameState.hasStarted === undefined) {
                 gameState.hasStarted = false;
             }
+            // Đảm bảo giftMapping tồn tại
+            if (!gameState.giftMapping || gameState.giftMapping.length === 0) {
+                initGiftMapping();
+            }
         }
     } catch (e) {
         console.error('Lỗi khi tải dữ liệu:', e);
@@ -444,7 +471,8 @@ function loadGameState() {
             totalMoney: 0,
             openedBoxes: [],
             history: [],
-            hasStarted: false
+            hasStarted: false,
+            giftMapping: []
         };
     }
 }
