@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quà tặng 8/3 yêu thương ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas cho confetti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Màn hình chào -->
+    <section id="welcome-screen" class="screen active">
+        <div class="container">
+            <div class="welcome-content">
+                <h1 class="title">🌷 Chúc Mừng 8/3 🌷</h1>
+                <p class="subtitle">Người yêu của anh</p>
+                <p class="message">
+                    Món quà nhỏ xinh dành tặng em<br>
+                    Hãy mở từng hộp quà và khám phá điều bất ngờ nhé! 💝
+                </p>
+                <button id="start-btn" class="btn-primary">
+                    Mở quà thôi ❤️
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Màn hình mở quà -->
+    <section id="gift-screen" class="screen">
+        <div class="container">
+            <!-- Header với tổng tiền -->
+            <div class="header">
+                <h2 class="screen-title">🎁 Hộp Quà Của Em</h2>
+                <div class="total-money">
+                    <div class="money-label">Tổng tiền hiện tại:</div>
+                    <div class="money-value" id="total-money">0 ₫</div>
+                </div>
+                <div class="remaining-opens" id="remaining-opens">
+                    Còn <strong id="opens-left">10</strong> hộp quà được mở
+                </div>
+            </div>
+
+            <!-- Grid hộp quà -->
+            <div class="gifts-grid" id="gifts-grid">
+                <!-- 20 hộp quà sẽ được tạo bằng JavaScript -->
+            </div>
+        </div>
+
+        <!-- Floating history button -->
+        <button id="history-btn" class="btn-floating" title="Xem lịch sử">
+            📜
+        </button>
+    </section>
+
+    <!-- Modal lịch sử -->
+    <div id="history-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📜 Lịch Sử Mở Quà</h3>
+                <button class="modal-close" id="close-history">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="history-list" class="history-list">
+                    <!-- Lịch sử sẽ được render bằng JavaScript -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="reset-btn" class="btn-danger">
+                    🔄 Xóa lịch sử và chơi lại
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
